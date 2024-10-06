@@ -34,3 +34,41 @@ This repository is organized into daily folders, each containing:
 - **Problem Statements**: A brief description of the problem being solved.
 - **Code**: The implemented solution in C++.
 
+
+# Day 1: Arrays
+
+In this first day of the **100 Days of DSA Challenge**, I focused on fundamental problems related to arrays. The goal was to strengthen my understanding of array manipulation techniques and familiarize myself with common problem-solving patterns.
+
+## 📋 Problems Solved
+
+### 1. Find the Maximum Element in an Array
+
+- **Problem Statement**: Given an array of integers, find and return the maximum element.
+- **Approach**: 
+  - Initialize a variable to store the maximum value.
+  - Iterate through the array, updating the maximum value whenever a larger element is found.
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+
+### 2. Second Largest Element in the Array
+
+- **Problem Statement**: Given an array of integers, find and return the second largest element.
+- **Approach**: 
+  - Initialize two variables to keep track of the largest and second largest elements.
+  - Traverse the array, updating these variables accordingly.
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+
+## 💻 Code Implementations
+
+- **Find Maximum Element**: [max_element.cpp](./Day1/max_element.cpp)
+- **Second Largest Element**: [second_largest.cpp](./Day1/second_largest.cpp)
+
+## 📝 Learnings
+
+- I learned about efficient ways to iterate through arrays and the importance of keeping track of multiple variables to find solutions.
+- This exercise helped reinforce the concept of linear time complexity and its implications in algorithm efficiency.
+
+---
+
+Excited to continue the journey and tackle more challenging problems in the upcoming days
