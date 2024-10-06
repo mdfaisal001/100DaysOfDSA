@@ -28,7 +28,6 @@ Welcome to my **100 Days of DSA Challenge** repository! This project is aimed at
 - **GeeksforGeeks**: [geeksforgeeks.org](https://www.geeksforgeeks.org)
 - **Competitive Programming Platforms**: Various others.
 
-## 📂 Repository Contents
 
 This repository is organized into daily folders, each containing:
 
