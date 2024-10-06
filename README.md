@@ -62,7 +62,7 @@ In this first day of the **100 Days of DSA Challenge**, I focused on fundamental
 ## 💻 Code Implementations
 
 - **Find Maximum Element**: [max_element.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day1/maxElement.cpp)
-- **Second Largest Element**: [second_largest.cpp](./Day1/second_largest.cpp)
+- **Second Largest Element**: [second_largest.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day1/SecondLargestElement.cpp)
 
 ## 📝 Learnings
 
