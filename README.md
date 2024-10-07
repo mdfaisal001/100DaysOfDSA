@@ -98,7 +98,7 @@ On the second day of the **100 Days of DSA Challenge**, I delved into two signif
 ## 💻 Code Implementations
 
 - **Missing Number in Array**: [missing_number.cpp]()
-- **Array Reverse**: [array_reverse.cpp](./Day2/array_reverse.cpp)
+- **Array Reverse**: [array_reverse.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day2/arrayReversal.cpp)
 
 ## 📝 Learnings
 
