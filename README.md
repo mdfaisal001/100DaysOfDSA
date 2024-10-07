@@ -72,3 +72,40 @@ In this first day of the **100 Days of DSA Challenge**, I focused on fundamental
 ---
 
 Excited to continue the journey and tackle more challenging problems in the upcoming days
+
+# Day 2: Missing Number in Array and Array Reverse
+
+On the second day of the **100 Days of DSA Challenge**, I delved into two significant problems involving arrays: **Finding the Missing Number in an Array** and **Reversing an Array**. These exercises reinforced my understanding of array manipulation and explored different algorithmic approaches.
+
+## 📋 Problems Solved
+
+### 1. Missing Number in Array
+
+- **Problem Statement**: Given an array containing `n` distinct numbers taken from `0` to `n`, find and return the one number that is missing from the array.
+- **Approach**: 
+  - Calculate the expected sum of the first `n` natural numbers and subtract the actual sum of the array elements to identify the missing number.
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+
+### 2. Array Reverse
+
+- **Problem Statement**: Given an array, reverse its elements in place.
+- **Approach**: 
+  - Use a two-pointer technique to swap elements from the beginning and end of the array until they meet in the middle.
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+
+## 💻 Code Implementations
+
+- **Missing Number in Array**: [missing_number.cpp]()
+- **Array Reverse**: [array_reverse.cpp](./Day2/array_reverse.cpp)
+
+## 📝 Learnings
+
+- I learned about different techniques for solving the missing number problem, emphasizing the importance of selecting efficient algorithms based on time complexity.
+- The exercise reinforced my skills in array manipulation, specifically in reversing arrays using various approaches.
+
+---
+
+Excited to continue the journey and tackle more challenging problems in the upcoming days!
+
