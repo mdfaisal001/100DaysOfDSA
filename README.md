@@ -109,3 +109,35 @@ On the second day of the **100 Days of DSA Challenge**, I delved into two signif
 
 Excited to continue the journey and tackle more challenging problems in the upcoming days!
 
+# Day 3: Kth Largest Element in an Array
+
+On the third day of the **100 Days of DSA Challenge**, I focused on solving the problem of finding the **Kth Largest Element in an Array**. I implemented a brute force solution first, followed by exploring an optimized approach using Quickselect.
+
+## 📋 Problems Solved
+
+### 1. Kth Largest Element in an Array
+
+- **Problem Statement**: Given an array of integers and a number `k`, find and return the `k`th largest element in the array.
+- **Approach (Brute Force)**: 
+  - Sort the array in descending order and return the element at the `k-1` index.
+  - **Time Complexity**: O(n log n) due to sorting.
+  - **Space Complexity**: O(1), as no additional space is required.
+- **Approach (Optimized)**: 
+  - Use the Quickselect algorithm, which selects the `k`th largest element in average O(n) time, leveraging partitioning like in Quicksort.
+  - **Time Complexity**: O(n) on average for Quickselect.
+  - **Space Complexity**: O(1).
+
+## 💻 Code Implementations
+
+- **Kth Largest Element (Brute Force)**: [kth_largest_brute.cpp](./Day3/kth_largest_brute.cpp)
+- **Kth Largest Element (Quickselect)**: [kth_largest_quickselect.cpp](./Day3/kth_largest_quickselect.cpp)
+
+## 📝 Learnings
+
+- I practiced a brute force solution using sorting to find the `k`th largest element in an array.
+- I learned how to optimize the approach using the Quickselect algorithm, which is more efficient in terms of time complexity for large arrays.
+- Understanding partitioning and recursion in Quickselect deepened my knowledge of divide-and-conquer strategies.
+
+---
+
+Looking forward to exploring more advanced data structures and algorithms in the upcoming days!
