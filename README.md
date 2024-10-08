@@ -129,8 +129,8 @@ On the third day of the **100 Days of DSA Challenge**, I focused on solving the 
 
 ## 💻 Code Implementations
 
-- **Kth Largest Element (Brute Force)**: [kth_largest_brute.cpp](./Day3/kth_largest_brute.cpp)
-- **Kth Largest Element (Quickselect)**: [kth_largest_quickselect.cpp](./Day3/kth_largest_quickselect.cpp)
+- **Kth Largest Element (Brute Force)**: [kth_largest_brute.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day3/kthLargestEle.cpp)
+- **Kth Largest Element (Quickselect)**: [kth_largest_quickselect.cpp](update soon)
 
 ## 📝 Learnings
 
