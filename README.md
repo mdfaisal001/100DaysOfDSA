@@ -159,7 +159,7 @@ On the fourth day of the **100 Days of DSA Challenge**, I focused on solving the
 
 ## 💻 Code Implementations
 
-- **Separate Negative and Positive Numbers**: [separate_neg_pos.cpp](./Day4/separate_neg_pos.cpp)
+- **Separate Negative and Positive Numbers**: [separate_neg_pos.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day4/sepNegAndPos.cpp)
 
 ## 📝 Learnings
 
