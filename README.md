@@ -141,3 +141,32 @@ On the third day of the **100 Days of DSA Challenge**, I focused on solving the 
 ---
 
 Looking forward to exploring more advanced data structures and algorithms in the upcoming days!
+# Day 4: Separate Negative and Positive Numbers in an Array
+
+On the fourth day of the **100 Days of DSA Challenge**, I focused on solving the problem of separating negative and positive numbers in an array. I utilized the two-pointer technique to achieve the desired result in optimal time.
+
+## 📋 Problems Solved
+
+### 1. Separate Negative and Positive Numbers in an Array
+
+- **Problem Statement**: Given an array of integers, rearrange the array such that all negative numbers appear before all positive numbers. The relative order of negative numbers and positive numbers does not matter.
+- **Approach**:
+  - Use two pointers: one at the start and one at the end of the array.
+  - Iterate through the array, and if the start pointer points to a positive number and the end pointer points to a negative number, swap them.
+  - Repeat this process until the pointers cross each other.
+- **Time Complexity**: O(n), as we iterate through the array once.
+- **Space Complexity**: O(1), as we only use constant space for two pointers.
+
+## 💻 Code Implementations
+
+- **Separate Negative and Positive Numbers**: [separate_neg_pos.cpp](./Day4/separate_neg_pos.cpp)
+
+## 📝 Learnings
+
+- The two-pointer technique is a powerful tool for efficiently solving problems related to partitioning arrays.
+- This problem helped reinforce my understanding of in-place algorithms and constant space optimizations.
+- It was a practical exercise in manipulating array indices and swapping values.
+
+---
+
+Excited to continue the journey and tackle more challenging problems in the upcoming days!
