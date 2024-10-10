@@ -195,8 +195,8 @@ On the fifth day of the **100 Days of DSA Challenge**, I worked on solving the p
 
 ## 💻 Code Implementations
 
-- **Cyclically Rotate an Array (Two-Pointer)**: [)
-- **Cyclically Rotate an Array (Shift-based)**: [cyclic_rotate_shift.cpp](./Day5/cyclic_rotate_shift.cpp)
+- **Cyclically Rotate an Array (Two-Pointer)**: [https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day5/circularRotateArr.cpp)
+- **Cyclically Rotate an Array (Shift-based)**: [https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day5/circularRotateArr.cpp)
 
 ## 📝 Learnings
 
