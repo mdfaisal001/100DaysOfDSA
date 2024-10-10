@@ -170,3 +170,40 @@ On the fourth day of the **100 Days of DSA Challenge**, I focused on solving the
 ---
 
 Excited to continue the journey and tackle more challenging problems in the upcoming days!
+
+# Day 5: Cyclically Rotate an Array
+
+On the fifth day of the **100 Days of DSA Challenge**, I worked on solving the problem of cyclically rotating an array. I implemented multiple approaches to better understand different techniques for array manipulation.
+
+## 📋 Problems Solved
+
+### 1. Cyclically Rotate an Array
+
+- **Problem Statement**: Given an array, cyclically rotate the array by one position. This means moving the last element of the array to the first position.
+- **Approach 1 (Swap-based with Two-Pointer)**:
+  - Use two pointers: one at the start of the array and the other at the last element.
+  - Swap elements until all positions are rotated.
+  - **Time Complexity**: O(n), where n is the length of the array.
+  - **Space Complexity**: O(1), as no additional space is used apart from the pointers.
+  
+- **Approach 2 (Shift-based)**:
+  - Store the last element of the array in a temporary variable.
+  - Shift all other elements to the right by one position.
+  - Place the temporary last element at the first position.
+  - **Time Complexity**: O(n), as we iterate through the array once.
+  - **Space Complexity**: O(1), as no additional space is used other than the temporary variable.
+
+## 💻 Code Implementations
+
+- **Cyclically Rotate an Array (Two-Pointer)**: [)
+- **Cyclically Rotate an Array (Shift-based)**: [cyclic_rotate_shift.cpp](./Day5/cyclic_rotate_shift.cpp)
+
+## 📝 Learnings
+
+- The two-pointer technique continues to be a useful approach for in-place array manipulation.
+- I learned how to shift elements within an array efficiently, which is crucial for problems involving rotations.
+- This exercise helped strengthen my ability to implement different approaches to solving the same problem, which is key for understanding time and space optimization.
+
+---
+
+Looking forward to solving more problems in the upcoming days and improving my skills further!
