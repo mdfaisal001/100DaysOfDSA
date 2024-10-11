@@ -34,15 +34,12 @@ public:
 
         vector<int> result;
         int i = 0, j = 0;
-
+        unordered_set<int> set;
+        vector<int>result;
         while (i < nums1.size() && j < nums2.size())
         {
             if (nums1[i] == nums2[j])
-            {
-                if (result.empty() || result.back() != nums1[i])
-                {
-                    result.push_back(nums1[i]);
-                }
+            {  set.insert(nums1[i]);
                 i++;
                 j++;
             }
@@ -55,8 +52,8 @@ public:
                 j++;
             }
         }
-
-        return result;
+       for(int val:set){
+           result.push_back(val);
     }
 }; // optimized one O(nlogn)
 
