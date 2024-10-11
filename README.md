@@ -207,3 +207,52 @@ On the fifth day of the **100 Days of DSA Challenge**, I worked on solving the p
 ---
 
 Looking forward to solving more problems in the upcoming days and improving my skills further!
+
+# Day 6: Intersection of Two Arrays
+
+On the sixth day of the **100 Days of DSA Challenge**, I focused on solving the "Intersection of Two Arrays" problem using three different approaches. Each approach helped me understand different trade-offs in terms of time complexity, space complexity, and code efficiency.
+
+## 📋 Problems Solved
+
+### 1. Intersection of Two Arrays
+
+- **Problem Statement**: Given two arrays, return the intersection of these arrays. Each element in the result must be unique.
+  
+### Approaches:
+  
+#### a. Brute-Force Approach
+- **Approach**: Compare each element of the first array with each element of the second array using nested loops.
+- **Time Complexity**: O(n²) due to the nested loops.
+- **Space Complexity**: O(1), as no additional data structures are used.
+  
+#### b. Optimized Two-Pointer Approach
+- **Approach**: 
+  - First, sort both arrays.
+  - Use two pointers to traverse both arrays simultaneously, checking for common elements.
+  - Move the pointer in the smaller array forward to continue the comparison.
+- **Time Complexity**: O(n log n) due to sorting and O(n) for traversing.
+- **Space Complexity**: O(1), as no additional space beyond the input arrays is used.
+  
+#### c. Hash Set Approach
+- **Approach**: 
+  - Store the elements of the first array in an unordered set.
+  - Traverse the second array and check for common elements in the set.
+- **Time Complexity**: O(n) on average, as hash set operations (insert and lookup) are constant time.
+- **Space Complexity**: O(n) due to the storage of elements in the hash set.
+
+## 💻 Code Implementations
+
+- **Brute-Force Approach**: [intersection_brute_force.cpp](./Day6/intersection_brute_force.cpp)
+- **Two-Pointer Approach**: [intersection_two_pointer.cpp](./Day6/intersection_two_pointer.cpp)
+- **Hash Set Approach**: [intersection_hash_set.cpp](./Day6/intersection_hash_set.cpp)
+
+## 📝 Learnings
+
+- The brute-force approach, though easy to implement, is inefficient for large arrays due to its O(n²) time complexity.
+- The two-pointer technique provided a more optimized solution with O(n log n) complexity, and its in-place nature minimized the space usage.
+- The hash set approach introduced me to a faster solution with O(n) time complexity, helping me understand the practical application of hash tables in solving intersection problems.
+- Today, I also learned about the trade-offs between space and time complexity when choosing between different approaches.
+
+---
+
+Excited to keep learning and improving my problem-solving skills in the upcoming days!
