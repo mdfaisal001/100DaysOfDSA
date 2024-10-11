@@ -242,9 +242,9 @@ On the sixth day of the **100 Days of DSA Challenge**, I focused on solving the 
 
 ## 💻 Code Implementations
 
-- **Brute-Force Approach**: [intersection_brute_force.cpp](./Day6/intersection_brute_force.cpp)
-- **Two-Pointer Approach**: [intersection_two_pointer.cpp](./Day6/intersection_two_pointer.cpp)
-- **Hash Set Approach**: [intersection_hash_set.cpp](./Day6/intersection_hash_set.cpp)
+- **Brute-Force Approach**: [intersection_brute_force.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day6/intersectionOf2Array.cpp)
+- **Two-Pointer Approach**: [intersection_two_pointer.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day6/intersectionOf2Array.cpp)
+- **Hash Set Approach**: [intersection_hash_set.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day6/intersectionOf2Array.cpp)
 
 ## 📝 Learnings
 
