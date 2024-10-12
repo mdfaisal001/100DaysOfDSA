@@ -291,9 +291,9 @@ On the seventh day of the **100 Days of DSA Challenge**, I tackled the "Two Sum"
 
 ## 💻 Code Implementations
 
-- **Brute-Force Approach**: [two_sum_brute_force.cpp](./Day7/two_sum_brute_force.cpp)
-- **Hash Set Approach**: [two_sum_hash_set.cpp](./Day7/two_sum_hash_set.cpp)
-- **Hash Map Approach**: [two_sum_hash_map.cpp](./Day7/two_sum_hash_map.cpp)
+- **Brute-Force Approach**: [two_sum_brute_force.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day7/twoSum.cpp)
+- **Hash Set Approach**: [two_sum_hash_set.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day7/twoSum.cpp)
+- **Hash Map Approach**: [two_sum_hash_map.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day7/twoSum.cpp)
 
 ## 📝 Learnings
 
