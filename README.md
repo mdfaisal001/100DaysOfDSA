@@ -256,3 +256,51 @@ On the sixth day of the **100 Days of DSA Challenge**, I focused on solving the 
 ---
 
 Excited to keep learning and improving my problem-solving skills in the upcoming days!
+
+# Day 7: Two Sum Problem
+
+On the seventh day of the **100 Days of DSA Challenge**, I tackled the "Two Sum" problem using three different approaches. This problem is a popular interview question and helped me explore various strategies for finding pairs of numbers that sum up to a target value.
+
+## 📋 Problems Solved
+
+### 1. Two Sum
+
+- **Problem Statement**: Given an array of integers and a target value, find two numbers such that they add up to the target. Return the indices of the two numbers.
+  
+### Approaches:
+
+#### a. Brute-Force Approach
+- **Approach**: 
+  - Use two nested loops to check all pairs of elements in the array and find the pair whose sum equals the target value.
+- **Time Complexity**: O(n²) due to the nested loops.
+- **Space Complexity**: O(1), as no extra space is used.
+
+#### b. Hash Set Approach
+- **Approach**:
+  - Use a hash set to track the complement of each element (target - current element).
+  - As you iterate through the array, check if the complement exists in the hash set.
+- **Time Complexity**: O(n), since checking for the complement in a hash set is constant time.
+- **Space Complexity**: O(n), as we store elements in the hash set.
+
+#### c. Hash Map Approach
+- **Approach**:
+  - Use an unordered map to store each element’s value and its index as you iterate through the array.
+  - For each element, check if its complement (target - element) exists in the map.
+- **Time Complexity**: O(n), as each lookup in the hash map is constant time.
+- **Space Complexity**: O(n), since we store elements in the hash map.
+
+## 💻 Code Implementations
+
+- **Brute-Force Approach**: [two_sum_brute_force.cpp](./Day7/two_sum_brute_force.cpp)
+- **Hash Set Approach**: [two_sum_hash_set.cpp](./Day7/two_sum_hash_set.cpp)
+- **Hash Map Approach**: [two_sum_hash_map.cpp](./Day7/two_sum_hash_map.cpp)
+
+## 📝 Learnings
+
+- The brute-force approach is easy to implement but becomes inefficient as the array size grows.
+- The hash set and hash map approaches offered significantly better time complexity, demonstrating the power of hash-based data structures for solving problems in linear time.
+- I deepened my understanding of how hash maps can be used not just for lookup, but also for efficient searching in problems involving complements or sums.
+
+---
+
+Excited to continue solving more problems and building up my problem-solving toolkit!
