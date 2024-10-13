@@ -291,9 +291,9 @@ On the seventh day of the **100 Days of DSA Challenge**, I tackled the "Two Sum"
 
 ## 💻 Code Implementations
 
-- **Brute-Force Approach**: [two_sum_brute_force.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day7/twoSum.cpp)
-- **Hash Set Approach**: [two_sum_hash_set.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day7/twoSum.cpp)
-- **Hash Map Approach**: [two_sum_hash_map.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day7/twoSum.cpp)
+- **Brute-Force Approach**: [two_sum_brute_force.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day7/twoSumUpdated.cpp)
+- **Hash Set Approach**: [https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day7/twoSumUpdated.cpp)
+- **Hash Map Approach**: [https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day7/twoSumUpdated.cpp)
 
 ## 📝 Learnings
 
@@ -304,3 +304,45 @@ On the seventh day of the **100 Days of DSA Challenge**, I tackled the "Two Sum"
 ---
 
 Excited to continue solving more problems and building up my problem-solving toolkit!
+
+# Day 8: Merge Sorted Arrays
+
+On the eighth day of the **100 Days of DSA Challenge**, I focused on solving the "Merge Sorted Arrays" problem. This task involved combining two sorted arrays into a single sorted array. I implemented both an optimized approach and a brute-force approach to better understand the advantages of each.
+
+## 📋 Problems Solved
+
+### 1. Merge Sorted Arrays
+
+- **Problem Statement**: Given two sorted arrays, merge them into a single sorted array.
+  
+### Approaches:
+
+#### a. Optimized Approach (Two-Pointer Technique)
+- **Approach**: 
+  - Use two pointers, one for each array, to compare the elements.
+  - Add the smaller element to the result array and move the corresponding pointer forward.
+  - Continue until all elements from both arrays are merged.
+- **Time Complexity**: O(m + n), where m and n are the lengths of the two arrays.
+- **Space Complexity**: O(m + n) for the result array.
+
+#### b. Brute-Force Approach
+- **Approach**: 
+  - Create a new array and insert all elements from both arrays into it.
+  - Sort the new array to ensure it is in order.
+- **Time Complexity**: O((m + n) log(m + n)), due to the sorting step.
+- **Space Complexity**: O(m + n), for storing all elements in the new array.
+
+## 💻 Code Implementations
+
+- **Optimized Two-Pointer Approach**: [merge_sorted_arrays_optimized.cpp]()
+- **Brute-Force Approach**: [merge_sorted_arrays_brute_force.cpp](./Day8/merge_sorted_arrays_brute_force.cpp)
+
+## 📝 Learnings
+
+- The optimized approach with the two-pointer technique is significantly more efficient than the brute-force method, particularly as the size of the input arrays grows.
+- Understanding how to merge sorted arrays is a crucial skill, as it lays the groundwork for more complex algorithms, such as merge sort.
+- I also learned the importance of maintaining order and efficiency when combining data from multiple sources.
+
+---
+
+Looking forward to the next challenges and continuing to expand my knowledge of algorithms and data structures!
