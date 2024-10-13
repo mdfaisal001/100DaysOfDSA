@@ -334,8 +334,8 @@ On the eighth day of the **100 Days of DSA Challenge**, I focused on solving the
 
 ## 💻 Code Implementations
 
-- **Optimized Two-Pointer Approach**: [merge_sorted_arrays_optimized.cpp]()
-- **Brute-Force Approach**: [merge_sorted_arrays_brute_force.cpp](./Day8/merge_sorted_arrays_brute_force.cpp)
+- **Optimized Two-Pointer Approach**: [merge_sorted_arrays_optimized.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day8/mergeSortedArray.cpp)
+- **Brute-Force Approach**: [merge_sorted_arrays_brute_force.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day8/mergeSortedArray.cpp)
 
 ## 📝 Learnings
 
