@@ -398,7 +398,7 @@ On the tenth day of the **100 Days of DSA Challenge**, I focused on solving the 
 
 ## 💻 Code Implementation
 
-- **Single Pass Solution**: [best_time_to_buy_and_sell_stock.cpp](./Day10/best_time_to_buy_and_sell_stock.cpp)
+- **Single Pass Solution**: [best_time_to_buy_and_sell_stock.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day10/bestTimetoBuyAndSellStock.cpp)
 
 ## 📝 Learnings
 
