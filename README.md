@@ -343,6 +343,74 @@ On the eighth day of the **100 Days of DSA Challenge**, I focused on solving the
 - Understanding how to merge sorted arrays is a crucial skill, as it lays the groundwork for more complex algorithms, such as merge sort.
 - I also learned the importance of maintaining order and efficiency when combining data from multiple sources.
 
+  # Day 9: Maximum Subarray
+
+On the ninth day of the **100 Days of DSA Challenge**, I focused on solving the "Maximum Subarray" problem, a fundamental problem that demonstrates the power of dynamic programming techniques. The task was to identify the contiguous subarray within a one-dimensional array of numbers that has the largest sum.
+
+## 📋 Problems Solved
+
+### 1. Maximum Subarray
+
+- **Problem Statement**: Given an integer array, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+  
+### Approach:
+
+#### Kadane's Algorithm
+- **Approach**:
+  - Initialize two variables: `max_current` to keep track of the maximum sum ending at the current position and `max_global` to store the maximum sum found so far.
+  - Iterate through the array, updating `max_current` to either the current element alone or the sum of `max_current` and the current element.
+  - Update `max_global` if `max_current` exceeds it.
+- **Time Complexity**: O(n), as we only traverse the array once.
+- **Space Complexity**: O(1), since we use only a fixed amount of extra space.
+
+## 💻 Code Implementation
+
+- **Kadane's Algorithm**: [maximum_subarray.cpp](./Day9/maximum_subarray.cpp)
+
+## 📝 Learnings
+
+- Kadane’s algorithm is an efficient way to solve the maximum subarray problem with linear time complexity, showcasing how dynamic programming principles can be applied to reduce the problem's complexity.
+- I learned the importance of keeping track of both the current maximum and global maximum during the iteration, allowing for a straightforward and effective solution.
+- This problem deepened my understanding of how to optimize problems involving sums and sequences, which can be applicable in various scenarios.
+
+---
+
+Looking forward to continuing my journey and tackling more interesting problems in the upcoming days!
+
+# Day 10: Best Time to Buy and Sell Stock
+
+On the tenth day of the **100 Days of DSA Challenge**, I focused on solving the "Best Time to Buy and Sell Stock" problem. The goal was to maximize profit by determining the best time to buy and sell a single stock based on its prices over time.
+
+## 📋 Problems Solved
+
+### 1. Best Time to Buy and Sell Stock
+
+- **Problem Statement**: Given an array where the ith element is the price of a given stock on day i, return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+  
+### Approach:
+
+#### Single Pass Approach
+- **Approach**: 
+  - Initialize two variables: `min_price` to track the lowest price encountered so far and `max_profit` to store the maximum profit achieved.
+  - Iterate through the prices array, updating `min_price` whenever a lower price is found, and calculate the potential profit by subtracting `min_price` from the current price. Update `max_profit` if this potential profit is greater.
+- **Time Complexity**: O(n), as we traverse the prices array only once.
+- **Space Complexity**: O(1), since we only use a fixed amount of extra space.
+
+## 💻 Code Implementation
+
+- **Single Pass Solution**: [best_time_to_buy_and_sell_stock.cpp](./Day10/best_time_to_buy_and_sell_stock.cpp)
+
+## 📝 Learnings
+
+- This problem reinforced the importance of keeping track of minimum values and how they can be used to calculate potential profits efficiently.
+- I learned how to optimize the problem-solving process by using a single pass through the array, significantly improving efficiency compared to a brute-force approach.
+- Understanding this problem is crucial for applications in real-world scenarios, such as stock trading strategies.
+
+---
+
+Excited to take on more challenges and enhance my skills in algorithms and data structures in the upcoming days!
+
+
 ---
 
 Looking forward to the next challenges and continuing to expand my knowledge of algorithms and data structures!
