@@ -365,7 +365,7 @@ On the ninth day of the **100 Days of DSA Challenge**, I focused on solving the 
 
 ## 💻 Code Implementation
 
-- **Kadane's Algorithm**: [maximum_subarray.cpp](./Day9/maximum_subarray.cpp)
+- **Kadane's Algorithm**: [maximum_subarray.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day9/maxSubArray.cpp)
 
 ## 📝 Learnings
 
