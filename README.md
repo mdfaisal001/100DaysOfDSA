@@ -414,3 +414,38 @@ Excited to take on more challenges and enhance my skills in algorithms and data 
 ---
 
 Looking forward to the next challenges and continuing to expand my knowledge of algorithms and data structures!
+
+
+# Day 11: Finding the Middle of a Linked List
+
+On the eleventh day of the **100 Days of DSA Challenge**, I focused on solving the problem of finding the middle node of a linked list. This is a fundamental problem that helps reinforce the understanding of linked list traversal techniques.
+
+## 📋 Problems Solved
+
+### 1. Finding the Middle of a Linked List
+
+- **Problem Statement**: Given a linked list, find the middle node. If the linked list has an even number of nodes, return the second middle node.
+  
+### Approach:
+
+#### Two-Pointer Technique
+- **Approach**: 
+  - Initialize two pointers, `slow` and `fast`. Move `slow` by one node and `fast` by two nodes in each iteration.
+  - When `fast` reaches the end of the list, `slow` will be at the middle node.
+- **Time Complexity**: O(n), as we traverse the linked list once.
+- **Space Complexity**: O(1), since we only use a fixed amount of extra space for the pointers.
+
+## 💻 Code Implementation
+
+- **Finding Middle of Linked List**: [find_middle_linked_list.cpp](./Day11/find_middle_linked_list.cpp)
+
+## 📝 Learnings
+
+- The two-pointer technique is a powerful approach for solving problems involving linked lists, allowing for efficient traversal with minimal space usage.
+- Understanding how to find the middle of a linked list enhances the ability to manipulate and analyze linked list structures effectively.
+- This problem helped solidify my grasp of linked list operations and the importance of pointer manipulation.
+
+---
+
+Looking forward to continuing my journey and tackling more exciting challenges in the upcoming days!
+
