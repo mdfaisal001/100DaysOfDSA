@@ -437,7 +437,7 @@ On the eleventh day of the **100 Days of DSA Challenge**, I focused on solving t
 
 ## 💻 Code Implementation
 
-- **Finding Middle of Linked List**: [find_middle_linked_list.cpp](./Day11/find_middle_linked_list.cpp)
+- **Finding Middle of Linked List**: [find_middle_linked_list.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day11/middleOfLL.cpp)
 
 ## 📝 Learnings
 
