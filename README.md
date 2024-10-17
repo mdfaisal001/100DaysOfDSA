@@ -475,8 +475,8 @@ On the twelfth day of the **100 Days of DSA Challenge**, I tackled the "Reverse 
 
 ## 💻 Code Implementation
 
-- **Brute Force Solution**: [reverse_linked_list_brute.cpp](./Day12/reverse_linked_list_brute.cpp)
-- **Optimized Solution**: [reverse_linked_list_optimized.cpp](./Day12/reverse_linked_list_optimized.cpp)
+- **Brute Force Solution**: [reverse_linked_list_brute.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day12/linkedListReversal.cpp)
+- **Optimized Solution**: [reverse_linked_list_optimized.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day12/linkedListReversal.cpp)
 
 ## 📝 Learnings
 
