@@ -445,7 +445,47 @@ On the eleventh day of the **100 Days of DSA Challenge**, I focused on solving t
 - Understanding how to find the middle of a linked list enhances the ability to manipulate and analyze linked list structures effectively.
 - This problem helped solidify my grasp of linked list operations and the importance of pointer manipulation.
 
+-Looking forward to continuing my journey and tackling more exciting challenges in the upcoming days!
+
+# Day 12: Reverse Linked List
+
+On the twelfth day of the **100 Days of DSA Challenge**, I tackled the "Reverse Linked List" problem. This problem is fundamental for understanding linked list manipulations and pointer adjustments.
+
+## 📋 Problems Solved
+
+### 1. Reverse Linked List
+
+- **Problem Statement**: Given the head of a singly linked list, reverse the list and return the reversed list.
+  
+### Approach:
+
+#### 1. Brute Force Approach
+- **Approach**: 
+  - Traverse the linked list and store the values in a vector.
+  - Once the values are stored, traverse the list again, updating each node's value from the back of the vector.
+- **Time Complexity**: O(n), as we traverse the list twice.
+- **Space Complexity**: O(n), since we use a vector to store the values.
+
+#### 2. Optimized Approach with Three Pointers
+- **Approach**: 
+  - Initialize three pointers: `prev`, `current`, and `mover`.
+  - Traverse the list while adjusting the `next` pointers of the nodes to reverse the list in place.
+- **Time Complexity**: O(n), as we traverse the list once.
+- **Space Complexity**: O(1), since we use a fixed amount of extra space for the pointers.
+
+## 💻 Code Implementation
+
+- **Brute Force Solution**: [reverse_linked_list_brute.cpp](./Day12/reverse_linked_list_brute.cpp)
+- **Optimized Solution**: [reverse_linked_list_optimized.cpp](./Day12/reverse_linked_list_optimized.cpp)
+
+## 📝 Learnings
+
+- I learned two different approaches to solve the same problem, highlighting the trade-offs between simplicity and efficiency.
+- The brute force method provided a straightforward solution, while the optimized approach emphasized in-place modifications, which is essential for linked list problems.
+- Understanding how to manipulate pointers effectively is crucial for solving advanced data structure problems.
+
 ---
 
-Looking forward to continuing my journey and tackling more exciting challenges in the upcoming days!
+Looking forward to continuing my journey and exploring more complex challenges in the upcoming days!
+
 
