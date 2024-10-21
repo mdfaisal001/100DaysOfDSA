@@ -488,4 +488,42 @@ On the twelfth day of the **100 Days of DSA Challenge**, I tackled the "Reverse 
 
 Looking forward to continuing my journey and exploring more complex challenges in the upcoming days!
 
+# Day 13: Detecting Cycle in a Linked List
+
+On the thirteenth day of the **100 Days of DSA Challenge**, I worked on detecting cycles in a linked list, solving it with two different approaches.
+
+## 📋 Problems Solved
+
+### 1. Detect Cycle in a Linked List
+
+- **Problem Statement**: Given the head of a singly linked list, return `true` if there is a cycle in the list, otherwise return `false`.
+
+### Approach:
+
+#### 1. Fast and Slow Pointer (Optimal Approach)
+- **Approach**: 
+  - Use two pointers, `slowptr` and `fastptr`. The `slowptr` moves one node at a time, while the `fastptr` moves two nodes at a time. If there is a cycle, the two pointers will eventually meet.
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(1)
+
+#### 2. Hash Set (Better Approach)
+- **Approach**: 
+  - Traverse the list and store visited nodes in an unordered set. If a node is visited more than once, it indicates a cycle.
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(n)
+
+## 💻 Code Implementations
+
+- **Fast and Slow Pointer Approach**: [detect_cycle_fast_slow.cpp](./Day13/detect_cycle_fast_slow.cpp)
+- **Hash Set Approach**: [detect_cycle_hash_set.cpp](./Day13/detect_cycle_hash_set.cpp)
+
+## 📝 Learnings
+
+- I learned two effective approaches for detecting cycles in a linked list.
+- The fast and slow pointer method is more space-efficient, while the hash set approach is simpler to implement but uses extra space.
+- Detecting cycles in a linked list is a fundamental skill in handling advanced linked list operations.
+
+---
+
+
 
