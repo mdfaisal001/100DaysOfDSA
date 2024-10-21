@@ -557,5 +557,58 @@ On the fourteenth day of the **100 Days of DSA Challenge**, I solved the problem
 - This problem strengthened my grasp of pointer manipulation in linked lists.
 
 ---
+# Day 15: Fibonacci & Implementing `myPow(x, n)`
+
+On the fifteenth day of the **100 Days of DSA Challenge**, I tackled two distinct problems: computing Fibonacci numbers and implementing the power function `myPow(x, n)`. Both of these problems strengthened my understanding of iterative algorithms and optimization techniques for handling large inputs.
+
+## 📋 Problems Solved
+
+### 1. Fibonacci Sequence
+
+- **Problem Statement**: Given a number `n`, return the `n`th Fibonacci number.
+  
+### Approach:
+
+#### Iterative Approach
+- **Approach**: 
+  - Used an iterative approach to compute Fibonacci numbers. The process started by initializing the first two Fibonacci numbers (0 and 1) and iterating through the sequence to compute higher values.
+- **Time Complexity**: O(n), as we traverse through the sequence once.
+- **Space Complexity**: O(1), as only a fixed amount of extra space is used to store variables.
+
+### 2. Implementing `myPow(x, n)`
+
+- **Problem Statement**: Implement the function `myPow(x, n)` which calculates `x` raised to the power `n`.
+
+### Approaches:
+
+#### 1. Direct Usage of `pow()` Function
+- **Approach**: 
+  - Directly used the built-in `pow()` function to compute the result.
+- **Time Complexity**: O(1), as this method simply calls a built-in function.
+- **Space Complexity**: O(1).
+
+#### 2. Optimized Approach (Binary Exponentiation)
+- **Approach**: 
+  - Optimized the power calculation using binary exponentiation to reduce time complexity. This method calculates powers efficiently by dividing the exponent by half at each step.
+  - Handled negative exponents by taking the reciprocal of the base and adjusting the exponent accordingly.
+- **Time Complexity**: O(log n), as the exponent is halved in each step.
+- **Space Complexity**: O(1), since no additional data structures are required.
+
+## 💻 Code Implementation
+
+- **Fibonacci Solution**: [fibonacci.cpp](./Day15/fibonacci.cpp)
+- **Power Function Solutions**: 
+  - [myPow_direct.cpp](./Day15/myPow_direct.cpp)
+  - [myPow_optimized.cpp](./Day15/myPow_optimized.cpp)
+
+## 📝 Learnings
+
+- The Fibonacci problem reinforced my understanding of iterative solutions and how to manage state between iterations with minimal space usage.
+- The `myPow` problem introduced me to binary exponentiation, which is a powerful technique to optimize power calculations.
+- Handling edge cases, especially for negative exponents and large inputs, was crucial in this challenge.
+
+---
+
+Excited for more challenges and opportunities to strengthen my DSA skills in the coming days!
 
 
