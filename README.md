@@ -611,4 +611,35 @@ On the fifteenth day of the **100 Days of DSA Challenge**, I tackled two distinc
 
 Excited for more challenges and opportunities to strengthen my DSA skills in the coming days!
 
+# Day 16: Reverse String
 
+On the sixteenth day of the **100 Days of DSA Challenge**, I tackled the "Reverse String" problem using recursion, a fundamental technique that is highly applicable to a wide range of problems.
+
+## 📋 Problems Solved
+
+### 1. Reverse String
+
+- **Problem Statement**: Given an array of characters, reverse the array in place using recursion.
+
+### Approach:
+
+#### Recursive Approach
+- **Approach**:
+  - I created a helper function `reverseHelper` that uses recursion to swap characters from both ends of the array towards the center.
+  - The base case is when the `firstIndex` is greater than or equal to the `lastIndex`.
+  - The helper function is then called recursively to continue reversing the remaining characters.
+- **Time Complexity**: O(n), where `n` is the length of the string.
+- **Space Complexity**: O(n) due to the recursion stack.
+
+## 💻 Code Implementation
+
+- **Recursive Solution**: [reverse_string_recursive.cpp](./Day16/reverse_string_recursive.cpp)
+
+## 📝 Learnings
+
+- This problem helped me understand how recursion can simplify solutions, making it easier to write clear and concise code.
+- While iterating solutions may seem easier at first glance, recursion offers an alternative approach that is useful in many algorithmic problems.
+
+---
+
+Excited to move forward with more challenges as part of this journey!
