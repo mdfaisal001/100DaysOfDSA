@@ -525,5 +525,37 @@ On the thirteenth day of the **100 Days of DSA Challenge**, I worked on detectin
 
 ---
 
+# Day 14: Merging Two Sorted Linked Lists
+
+On the fourteenth day of the **100 Days of DSA Challenge**, I solved the problem of merging two sorted linked lists.
+
+## 📋 Problems Solved
+
+### 1. Merge Two Sorted Linked Lists
+
+- **Problem Statement**: Given two sorted linked lists, merge them into one sorted linked list and return the merged list.
+
+### Approach:
+
+- **Approach**: 
+  - Create a dummy node to serve as the starting point for the merged list.
+  - Use two pointers (`ptr1` for `list1` and `ptr2` for `list2`) to traverse the lists.
+  - Compare the current nodes of both lists and append the smaller value to the merged list.
+  - Continue until one of the lists is exhausted, then append the remaining nodes from the other list.
+  
+- **Time Complexity**: O(n + m) where `n` is the length of `list1` and `m` is the length of `list2`.
+- **Space Complexity**: O(1) as no additional space is used other than pointers.
+
+## 💻 Code Implementation
+
+- **Merge Two Sorted Linked Lists**: [merge_two_sorted_lists.cpp](./Day14/merge_two_sorted_lists.cpp)
+
+## 📝 Learnings
+
+- I practiced merging two sorted linked lists, which is a common operation used in divide-and-conquer algorithms like merge sort.
+- Understanding the use of a dummy node simplifies the logic and reduces the edge cases when handling linked list merges.
+- This problem strengthened my grasp of pointer manipulation in linked lists.
+
+---
 
 
