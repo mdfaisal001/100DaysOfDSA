@@ -25,6 +25,8 @@ vector<string> subsequences(string str)
     return result;
 }
 
+// solution 2 bitmask
+
 #include <bits/stdc++.h>
 #include <algorithm>
 #include <string>
