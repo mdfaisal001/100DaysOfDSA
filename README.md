@@ -643,3 +643,83 @@ On the sixteenth day of the **100 Days of DSA Challenge**, I tackled the "Revers
 ---
 
 Excited to move forward with more challenges as part of this journey!
+
+# Day 17: Subsequences of a String
+
+On the seventeenth day of the **100 Days of DSA Challenge**, I explored how to generate all possible subsequences of a given string. This problem emphasizes the concept of subsets, binary representation, and recursion.
+
+## 📋 Problems Solved
+
+### 1. Subsequences of a String
+
+- **Problem Statement**: Given a string, generate all possible subsequences (non-contiguous subsequences) of the string.
+
+### Approach:
+
+#### 1. Recursive Approach
+- **Approach**:
+  - I used a helper function `subseqHelper` to recursively generate subsequences.
+  - At each index, we have two choices: either include the current character in the subsequence or exclude it.
+  - Base case: when the index reaches the length of the string, we store the current subsequence (if it's not empty).
+- **Time Complexity**: O(2^n), where `n` is the length of the string, as we explore two possibilities at each step.
+- **Space Complexity**: O(n), considering the recursion stack.
+
+#### 2. Iterative (Bitmasking) Approach
+- **Approach**:
+  - The bitmasking approach treats the problem as a subset generation problem. For a string of size `n`, there are `2^n` subsequences.
+  - Each number from `1` to `2^n - 1` is treated as a bitmask. For each bit set, we include the corresponding character from the string.
+  - This avoids recursion and uses binary representation to generate subsequences.
+- **Time Complexity**: O(n * 2^n), as we generate `2^n` subsequences, and for each subsequence, we iterate over the characters.
+- **Space Complexity**: O(2^n), required to store all subsequences.
+
+## 💻 Code Implementation
+
+- **Recursive Solution**: [subsequences_recursive.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day17/subsequenceOfString.cpp)
+- **Bitmasking Solution**: [subsequences_bitmask.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day17/subsequenceOfString.cpp)
+
+## 📝 Learnings
+
+- This problem helped me understand the recursive generation of subsequences, a concept closely related to solving problems using backtracking.
+- The bitmasking approach allowed me to explore a non-recursive, more systematic way of generating subsequences by leveraging binary numbers.
+- Both approaches showcase different ways to solve the same problem, emphasizing the flexibility of algorithm design.
+
+---
+
+Looking forward to continuing the challenge and tackling more interesting problems!
+
+# Day 18: Combination Sum
+
+On the eighteenth day of the **100 Days of DSA Challenge**, I worked on the "Combination Sum" problem. This problem is great for practicing recursion and backtracking.
+
+## 📋 Problems Solved
+
+### 1. Combination Sum
+
+- **Problem Statement**: Given an array of distinct integers `candidates` and a target integer `target`, return all unique combinations of `candidates` where the chosen numbers sum up to `target`. The same number may be chosen an unlimited number of times.
+
+### Approach:
+
+#### Recursive Backtracking Approach
+- **Approach**:
+  - I used a helper function `findCombinationSum` to recursively explore all possible combinations of numbers that sum up to the target.
+  - At each index, there are two choices: include the current element if it is less than or equal to the target, or move to the next element without including it.
+  - When the target reaches zero, the current combination is added to the result.
+  - Backtracking is used to remove the last added element and explore other combinations.
+  
+- **Time Complexity**: O(2^t), where `t` is the target value, as there are multiple ways to reach the target.
+- **Space Complexity**: O(k), where `k` is the number of elements in a single combination.
+
+## 💻 Code Implementation
+
+- **Combination Sum Solution**: [combination_sum.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day18/comminationSum.cpp)
+
+## 📝 Learnings
+
+- This problem deepened my understanding of recursive backtracking, which is crucial for solving problems that involve exploring different combinations or permutations.
+- I learned how to handle problems with repetitive choices where the same element can be reused multiple times in a solution.
+- The use of backtracking to explore all possible combinations, and removing the last added element after exploring a path, is a key technique in this type of problem.
+
+---
+
+Looking forward to continuing this challenge and working on more complex recursive problems in the upcoming days!
+
