@@ -687,7 +687,7 @@ On the seventeenth day of the **100 Days of DSA Challenge**, I explored how to g
 
 Looking forward to continuing the challenge and tackling more interesting problems!
 
-# Day 18: Combination Sum
+# Day 18,19,20: Combination Sum I,II,III
 
 On the eighteenth day of the **100 Days of DSA Challenge**, I worked on the "Combination Sum" problem. This problem is great for practicing recursion and backtracking.
 
@@ -711,7 +711,9 @@ On the eighteenth day of the **100 Days of DSA Challenge**, I worked on the "Com
 
 ## 💻 Code Implementation
 
-- **Combination Sum Solution**: [combination_sum.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day18/comminationSum.cpp)
+- **Combination Sum I Solution**: [combination_sum.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day18/comminationSum.cpp)
+- - **Combination Sum II Solution**: [combination_sum.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day18/comminationSum.cpp)
+  - - **Combination Sum III Solution**: [combination_sum.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day18/comminationSum.cpp)
 
 ## 📝 Learnings
 
