@@ -712,8 +712,8 @@ On the eighteenth day of the **100 Days of DSA Challenge**, I worked on the "Com
 ## 💻 Code Implementation
 
 - **Combination Sum I Solution**: [combination_sum.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day18/comminationSum.cpp)
-- - **Combination Sum II Solution**: [combination_sum.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day18/comminationSum.cpp)
-  - - **Combination Sum III Solution**: [combination_sum.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day18/comminationSum.cpp)
+- - **Combination Sum II Solution**: [combination_sum.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day19/CombinationSum2.cpp)
+  - - **Combination Sum III Solution**: [combination_sum.cpp](https://github.com/mdfaisal001/100DaysOfDSA/blob/main/100DaysOfDSA/Day20/combinationSum3.cpp)
 
 ## 📝 Learnings
 
