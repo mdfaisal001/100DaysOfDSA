@@ -725,3 +725,208 @@ On the eighteenth day of the **100 Days of DSA Challenge**, I worked on the "Com
 
 Looking forward to continuing this challenge and working on more complex recursive problems in the upcoming days!
 
+# Day 21: Subsets with Duplicates
+
+On the twenty-first day of the **100 Days of DSA Challenge**, I solved the "Subsets with Duplicates" problem.
+
+## 📋 Problems Solved
+
+### 1. Subsets with Duplicates
+- **Problem Statement**: Given an integer array `nums`, return all possible subsets (the power set) without duplicates. The solution set must not contain duplicate subsets.
+
+### Approach:
+- **Backtracking**:
+  - Use backtracking to generate all subsets, ensuring to skip over duplicates in the array.
+  - Sort the array first to help identify duplicates easily by skipping over consecutive identical elements during recursive calls.
+- **Time Complexity**: O(2^n), where `n` is the number of elements in `nums`.
+- **Space Complexity**: O(n), for storing the current subset and the result.
+
+## 💻 Code Implementation
+- **Subsets with Duplicates Solution**: [subsets_with_dup.cpp](./Day21/subsets_with_dup.cpp)
+
+## 📝 Learnings
+- This problem reinforced my understanding of generating subsets and handling duplicate elements efficiently using backtracking and sorting.
+# Day 22: Container With Most Water
+
+On the twenty-second day of the **100 Days of DSA Challenge**, I solved the "Container With Most Water" problem.
+
+## 📋 Problems Solved
+
+### 1. Container With Most Water
+- **Problem Statement**: Given an array `height` where `height[i]` is the height of a vertical line at position `i`, find two lines that together with the x-axis form a container that holds the most water. Return the maximum amount of water a container can store.
+
+### Approach:
+- **Two-pointer approach**:
+  - Start with two pointers at the beginning and end of the array.
+  - Calculate the area formed by the lines at the two pointers.
+  - Move the pointer pointing to the shorter line inward in hopes of finding a taller line that could form a larger area.
+  - Repeat until the two pointers meet.
+- **Time Complexity**: O(n), where `n` is the number of elements in `height`.
+- **Space Complexity**: O(1), since no extra space is used beyond the input array.
+
+## 💻 Code Implementation
+- **Container With Most Water Solution**: [container_with_most_water.cpp](./Day22/container_with_most_water.cpp)
+
+## 📝 Learnings
+- This problem enhanced my understanding of the two-pointer technique, which is very efficient for solving problems involving arrays and optimizing space complexity.
+# Day 23: Permutations
+
+On the twenty-third day of the **100 Days of DSA Challenge**, I solved the "Permutations" problem.
+
+## 📋 Problems Solved
+
+### 1. Permutations
+- **Problem Statement**: Given a collection of distinct integers, return all possible permutations. You need to implement a function that generates all possible orderings of the input numbers.
+
+### Approach:
+- **Backtracking Approach**:
+  - Use recursion to generate all possible permutations by swapping elements in the array.
+  - Swap elements at the current index and explore all permutations recursively.
+  - Once the index reaches the end of the array, store the current permutation.
+  - Backtrack by swapping the elements back to their original positions after the recursive call.
+- **Time Complexity**: O(n!), where `n` is the number of elements in the input array, because there are `n!` permutations.
+- **Space Complexity**: O(n), where `n` is the depth of the recursion tree.
+
+## 💻 Code Implementation
+- **Permutations Solution**: [permutations.cpp](./Day23/permutations.cpp)
+
+## 📝 Learnings
+- This problem helped me understand the concept of backtracking and how to generate all possible combinations and permutations of a set of elements.
+# Day 24: Sort Colors
+
+On the twenty-fourth day of the **100 Days of DSA Challenge**, I solved the "Sort Colors" problem.
+
+## 📋 Problems Solved
+
+### 1. Sort Colors
+- **Problem Statement**: Given an array of integers where each element is 0, 1, or 2, sort the array in-place without using the library sort function.
+  - The problem is based on the Dutch National Flag problem.
+  - The array needs to be sorted so that all 0s come first, followed by 1s, and then 2s.
+
+### Approach:
+- **Three Pointers Approach (Dutch National Flag Algorithm)**:
+  - Use three pointers (`low`, `mid`, `high`) to divide the array into three sections: one for 0s, one for 1s, and one for 2s.
+  - Start with all pointers pointing to the start and end of the array.
+  - If `nums[mid] == 0`, swap it with `nums[low]` and increment both `low` and `mid`.
+  - If `nums[mid] == 2`, swap it with `nums[high]` and decrement `high`.
+  - If `nums[mid] == 1`, just increment `mid`.
+  - Continue the process until `mid` crosses `high`.
+- **Time Complexity**: O(n), where `n` is the number of elements in the array, as the algorithm only passes through the array once.
+- **Space Complexity**: O(1), as we use a constant amount of extra space.
+
+## 💻 Code Implementation
+- **Sort Colors Solution**: [sort_colors.cpp](./Day24/sort_colors.cpp)
+
+## 📝 Learnings
+- This problem helped me understand how to efficiently sort an array with restricted values using a three-pointer approach.
+- The problem also demonstrated the importance of in-place sorting and avoiding unnecessary space complexity.
+# Day 25: Single Number
+
+On the twenty-fifth day of the **100 Days of DSA Challenge**, I solved the "Single Number" problem.
+
+## 📋 Problems Solved
+
+### 1. Single Number
+- **Problem Statement**: Given an integer array `nums`, where every element appears twice except for one, find the element that appears only once.
+  - The problem asks for an efficient solution to find the number that appears only once while all other numbers appear twice.
+
+### Approach:
+- **Using Unordered Map**:
+  - We use an unordered map (hash map) to store the frequency of each number in the array.
+  - Iterate through the array, count the occurrences of each number, and store them in the unordered map.
+  - After building the map, we iterate through it to find the number that appears exactly once.
+- **Time Complexity**: O(n), where `n` is the number of elements in the array, as we are iterating over the array and the map.
+- **Space Complexity**: O(n), since we are using an unordered map to store the frequency of each element.
+
+## 💻 Code Implementation
+- **Single Number Solution**: [single_number.cpp](./Day25/single_number.cpp)
+
+## 📝 Learnings
+- This problem helped me understand how to use hash maps to track the frequency of elements in an array.
+- While this approach is simple and works well, I also explored optimized solutions that use bitwise operations to solve the problem in O(n) time and O(1) space.
+
+# Day 26: Letter Combinations of a Phone Number
+
+On the twenty-sixth day of the **100 Days of DSA Challenge**, I solved the "Letter Combinations of a Phone Number" problem.
+
+## 📋 Problem Solved
+
+### 1. Letter Combinations of a Phone Number
+- **Problem Statement**: Given a string containing digits from `2` to `9` inclusive, return all possible letter combinations that the digits could represent. 
+  - A mapping of digits to letters (as on a phone keypad) is provided, and the task is to generate all possible letter combinations.
+
+### Approach:
+- **Backtracking Approach**:
+  - Use backtracking to explore all the possible combinations of letters for the given digits.
+  - A map is used to represent the letters associated with each digit.
+  - Start by iterating through each digit, and for each digit, explore all the characters that the digit could represent, adding one character at a time to the current combination.
+  - Once a combination is formed for the entire string of digits, add it to the result.
+- **Time Complexity**: O(4^n), where `n` is the length of the input string. In the worst case, we will have 4 choices for each digit (e.g., for digits '7' and '9').
+- **Space Complexity**: O(n), where `n` is the length of the result as we store all possible combinations.
+
+## 💻 Code Implementation
+- **Letter Combinations of a Phone Number Solution**: [letter_combinations.cpp](./Day26/letter_combinations.cpp)
+
+## 📝 Learnings
+- This problem helped me understand backtracking techniques and how to approach problems that require generating combinations of items.
+- I also learned how to effectively use a map to represent character mappings from digits to letters.
+
+# Day 27: Palindrome Linked List
+
+On the twenty-seventh day of the **100 Days of DSA Challenge**, I solved the "Palindrome Linked List" problem.
+
+## 📋 Problem Solved
+
+### 1. Palindrome Linked List
+- **Problem Statement**: Given a singly linked list, determine if it is a palindrome.
+  - A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization).
+
+### Approach:
+- **Approach 1: Using a Stack**:
+  - Traverse the linked list and push all node values into a stack.
+  - Then, traverse the list again and pop values from the stack, comparing them with the current node’s value.
+  - If at any point, the values do not match, return false.
+  - **Time Complexity**: O(n), where `n` is the length of the linked list (due to traversal and stack operations).
+  - **Space Complexity**: O(n) (space used by the stack).
+
+- **Approach 2: Using Recursion with Two Pointers**:
+  - Use a recursive approach with two pointers (one from the start and one from the end) to compare values.
+  - A helper function is used for recursive traversal, ensuring that we do not modify the original list.
+  - **Time Complexity**: O(n) (due to the recursion and linked list traversal).
+  - **Space Complexity**: O(n) due to the recursion stack.
+
+## 💻 Code Implementation
+- **Palindrome Linked List Solution (Stack-based)**: [palindrome_linked_list_stack.cpp](./Day27/palindrome_linked_list_stack.cpp)
+- **Palindrome Linked List Solution (Recursive Two Pointers)**: [palindrome_linked_list_recursive.cpp](./Day27/palindrome_linked_list_recursive.cpp)
+
+## 📝 Learnings
+- This problem helped me understand how to manipulate and traverse linked lists efficiently.
+- I learned how to use auxiliary data structures like stacks and recursion to solve palindrome-related problems.
+
+# Day 28: 3Sum
+
+On the twenty-eighth day of the **100 Days of DSA Challenge**, I solved the "3Sum" problem.
+
+## 📋 Problem Solved
+
+### 1. 3Sum
+- **Problem Statement**: Given an array of integers, return all unique triplets in the array that sum up to zero.
+  - The solution should not contain duplicate triplets.
+
+### Approach:
+- **Approach**:
+  - First, sort the input array.
+  - Use a fixed element at each iteration (starting from index `i`), and use two pointers (`left` and `right`) to find pairs that sum up with the fixed element to make the sum zero.
+  - Move the `left` and `right` pointers accordingly based on whether the sum is smaller, equal to, or larger than zero.
+  - Skip duplicate elements to avoid repeated triplets.
+  - **Time Complexity**: O(n^2) due to the two-pointer approach, where `n` is the length of the array.
+  - **Space Complexity**: O(1) for space used outside the result storage (since the result stores unique triplets).
+
+## 💻 Code Implementation
+- **3Sum Solution**: [three_sum.cpp](./Day28/three_sum.cpp)
+
+## 📝 Learnings
+- This problem taught me how to efficiently find triplets that satisfy certain conditions using sorting and the two-pointer technique.
+- It was a good practice for handling duplicates in the input array and ensuring that the solution contains only unique triplets.
+
+
