@@ -928,5 +928,298 @@ On the twenty-eighth day of the **100 Days of DSA Challenge**, I solved the "3Su
 ## 📝 Learnings
 - This problem taught me how to efficiently find triplets that satisfy certain conditions using sorting and the two-pointer technique.
 - It was a good practice for handling duplicates in the input array and ensuring that the solution contains only unique triplets.
+# Day 29: Binary Tree Level Order Traversal
 
+On the twenty-ninth day of the **100 Days of DSA Challenge**, I solved the "Binary Tree Level Order Traversal" problem.
+
+## 📋 Problem Solved
+
+### 1. Binary Tree Level Order Traversal
+- **Problem Statement**: Given a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
+  - The result should be a list of lists, where each list represents a level of the tree.
+
+### Approach:
+- **Approach**:
+  - Use a **queue** to traverse the tree level by level.
+  - Start with the root node and add it to the queue.
+  - For each level, pop nodes from the queue and add their values to a temporary list. For each node, enqueue its left and right children (if they exist).
+  - Continue this process until the queue is empty.
+  - **Time Complexity**: O(n), where n is the number of nodes in the tree.
+  - **Space Complexity**: O(n), as the queue can contain up to n nodes in the worst case (if the tree is completely unbalanced).
+
+## 💻 Code Implementation
+- **Binary Tree Level Order Traversal Solution**: [binary_tree_level_order_traversal.cpp](./Day29/binary_tree_level_order_traversal.cpp)
+
+## 📝 Learnings
+- This problem gave me practice with **breadth-first search (BFS)** and **level order traversal** of a tree using a queue.
+- It reinforced the concept of visiting nodes level by level, which is fundamental in tree traversal problems.
+
+# Day 30: Binary Tree Traversals (Inorder, Preorder, Postorder)
+
+On the thirtieth day of the **100 Days of DSA Challenge**, I solved the "Binary Tree Traversals" problem, implementing all three common types of tree traversal: **Inorder**, **Preorder**, and **Postorder**.
+
+## 📋 Problem Solved
+
+### 1. Inorder Traversal of a Binary Tree
+- **Problem Statement**: Perform an inorder traversal on a binary tree, returning the values of the nodes in the correct order.
+  - **Inorder Traversal Order**: Left subtree → Root → Right subtree.
+
+### 2. Preorder Traversal of a Binary Tree
+- **Problem Statement**: Perform a preorder traversal on a binary tree, returning the values of the nodes in the correct order.
+  - **Preorder Traversal Order**: Root → Left subtree → Right subtree.
+
+### 3. Postorder Traversal of a Binary Tree
+- **Problem Statement**: Perform a postorder traversal on a binary tree, returning the values of the nodes in the correct order.
+  - **Postorder Traversal Order**: Left subtree → Right subtree → Root.
+
+### Approach:
+- For each traversal, use **recursion** to visit the nodes in the correct order.
+- For **Inorder**, traverse the left subtree, visit the root, and then traverse the right subtree.
+- For **Preorder**, visit the root first, then traverse the left subtree, and then the right subtree.
+- For **Postorder**, traverse the left subtree, then the right subtree, and finally visit the root.
+
+- **Time Complexity**: O(n), where n is the number of nodes in the tree (since each node is visited once).
+- **Space Complexity**: O(n), as recursion adds stack space proportional to the height of the tree.
+
+## 💻 Code Implementation
+- **Inorder Traversal** Solution: [inorder_traversal.cpp](./Day30/inorder_traversal.cpp)
+- **Preorder Traversal** Solution: [preorder_traversal.cpp](./Day30/preorder_traversal.cpp)
+- **Postorder Traversal** Solution: [postorder_traversal.cpp](./Day30/postorder_traversal.cpp)
+
+## 📝 Learnings
+- Implementing the three types of tree traversals deepened my understanding of tree structures and recursion.
+- Each traversal serves a specific purpose in different tree algorithms, such as searching, sorting, or evaluating expressions.
+- The recursion-based approach is simple and intuitive for tree traversal problems.
+
+# Day 31: Maximum Depth of Binary Tree
+
+On the thirty-first day of the **100 Days of DSA Challenge**, I solved the problem of finding the **maximum depth of a binary tree**. I implemented both **Iterative** and **Recursive** approaches to solve this problem.
+
+## 📋 Problem Solved
+
+### Maximum Depth of Binary Tree
+- **Problem Statement**: Given the root of a binary tree, return its maximum depth. The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+
+### Approach:
+- **Iterative Approach (Level-Order Traversal)**: 
+  - Use a **queue** to perform level-order traversal of the tree. 
+  - Count the number of levels by traversing through the tree level by level. 
+  - This ensures that we count the number of levels (or depth) from the root to the deepest leaf node.
+  
+- **Recursive Approach**:
+  - Recursively calculate the depth by determining the maximum depth of the left and right subtrees and adding 1 to account for the current root node.
+  
+- **Time Complexity**: O(n), where n is the number of nodes in the tree, as we need to visit each node.
+- **Space Complexity**: O(n), where n is the number of nodes (for recursion stack or queue).
+
+## 💻 Code Implementation
+- **Iterative Approach** Solution: [max_depth_iterative.cpp](./Day31/max_depth_iterative.cpp)
+- **Recursive Approach** Solution: [max_depth_recursive.cpp](./Day31/max_depth_recursive.cpp)
+
+## 📝 Learnings
+- The iterative approach with level-order traversal is straightforward for finding the depth of the tree by counting levels.
+- The recursive approach provides a more natural way of thinking about tree depths, where each subtree’s depth is evaluated independently.
+- Both methods are efficient, and knowing both approaches adds versatility in problem-solving.
+
+# Day 32: Balanced Binary Tree
+
+On the thirty-second day of the **100 Days of DSA Challenge**, I solved the problem of checking if a binary tree is **balanced**. A balanced tree is defined as a tree where the height difference between the left and right subtrees of every node is at most 1.
+
+## 📋 Problem Solved
+
+### Balanced Binary Tree
+- **Problem Statement**: Given a binary tree, determine if it is height-balanced. A binary tree is balanced if the left and right subtrees of every node differ in height by no more than 1.
+
+### Approach:
+- **Recursive Approach**: 
+  - Perform a depth-first traversal of the tree, calculating the height of the left and right subtrees for each node.
+  - If the difference in height for any node exceeds 1, return -1 to signify that the tree is unbalanced.
+  - If we successfully check all nodes without finding any imbalance, the tree is balanced.
+
+- **Time Complexity**: O(n), where n is the number of nodes, because we visit each node once.
+- **Space Complexity**: O(h), where h is the height of the tree, due to the recursion stack.
+
+## 💻 Code Implementation
+- **Solution**: [balanced_binary_tree.cpp](./Day32/balanced_binary_tree.cpp)
+
+## 📝 Learnings
+- A **bottom-up** approach is effective for this problem since we compute the balance factor (height difference) of each subtree as we go deeper into the tree.
+- The recursive solution provides a natural way to traverse the tree while checking for balance.
+- The use of early termination (returning `-1` when an imbalance is found) optimizes the process by stopping unnecessary checks.
+
+
+# Day 33: Lowest Common Ancestor of a Binary Tree
+
+On the thirty-third day of the **100 Days of DSA Challenge**, I solved the problem of finding the **Lowest Common Ancestor (LCA)** of two nodes in a binary tree.
+
+## 📋 Problem Solved
+
+### Lowest Common Ancestor of a Binary Tree
+- **Problem Statement**: Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. The LCA of two nodes p and q is the lowest node that is an ancestor of both p and q.
+
+### Approach:
+- **Recursive Approach**:
+  - Traverse the tree recursively to find nodes p and q.
+  - If the current node is one of p or q, return the current node.
+  - Recursively find the LCA in the left and right subtrees.
+  - If both left and right subtrees contain one of p or q, the current node is their LCA.
+  - If only one subtree contains p or q, return that subtree’s result.
+
+- **Time Complexity**: O(n), where n is the number of nodes in the tree, since we may have to traverse the entire tree.
+- **Space Complexity**: O(h), where h is the height of the tree, due to the recursion stack.
+
+## 💻 Code Implementation
+- **Solution**: [lowest_common_ancestor.cpp](./Day33/lowest_common_ancestor.cpp)
+
+## 📝 Learnings
+- The concept of **Lowest Common Ancestor** is essential in many tree-based problems.
+- The recursive approach efficiently finds the LCA by breaking down the problem into smaller subproblems (left and right subtrees).
+- It’s important to understand that if both nodes are found in the left and right subtrees, the current node is the LCA.
+
+# Day 34: Diameter of Binary Tree
+
+On the thirty-fourth day of the **100 Days of DSA Challenge**, I solved the problem of finding the **diameter of a binary tree**.
+
+## 📋 Problem Solved
+
+### Diameter of Binary Tree
+- **Problem Statement**: The diameter of a binary tree is the length of the longest path between any two nodes in the tree. This path may or may not pass through the root.
+  
+### Approach:
+- **Recursive Approach**:
+  - Use a helper function `findDia` that computes the diameter of the tree while also calculating the height of each subtree.
+  - For each node, calculate the height of its left and right subtrees.
+  - The diameter at each node is the sum of the heights of the left and right subtrees. Update the `maxi` variable if the sum exceeds the current maximum diameter.
+  - The height of a node is `1 + max(height of left subtree, height of right subtree)`.
+
+- **Time Complexity**: O(n), where n is the number of nodes in the tree, since each node is visited once.
+- **Space Complexity**: O(h), where h is the height of the tree, due to recursion stack space.
+
+## 💻 Code Implementation
+- **Solution**: [diameter_of_binary_tree.cpp](./Day34/diameter_of_binary_tree.cpp)
+
+## 📝 Learnings
+- The diameter of a binary tree is closely related to the height of the tree.
+- The recursive approach efficiently computes both the diameter and the height by traversing each node only once.
+- It's crucial to track the maximum diameter found during the recursion to ensure the correct result.
+
+# Day 35: Symmetric Tree
+
+On the thirty-fifth day of the **100 Days of DSA Challenge**, I solved the problem of checking if a binary tree is symmetric.
+
+## 📋 Problem Solved
+
+### Symmetric Tree
+- **Problem Statement**: A binary tree is symmetric if its left and right subtrees are mirror images of each other.
+  
+### Approach:
+- **Level-Order Traversal (BFS)**:
+  - Use a queue to perform a level-order traversal of the tree.
+  - Start by pushing the left and right children of the root into the queue.
+  - For each pair of nodes, check if they are both `NULL` (in which case they are symmetric at this level) or if they have the same value. If not, return `false`.
+  - Add the children of the nodes to the queue in reverse order: for the left node, push its left child first and then its right child, and vice versa for the right node.
+  - If all pairs of nodes at each level are symmetric, return `true`; otherwise, return `false`.
+
+- **Time Complexity**: O(n), where n is the number of nodes in the tree, since each node is visited once.
+- **Space Complexity**: O(n), where n is the number of nodes at the deepest level, for the queue that stores nodes at each level.
+
+## 💻 Code Implementation
+- **Solution**: [symmetric_tree.cpp](./Day35/symmetric_tree.cpp)
+
+## 📝 Learnings
+- The problem of checking symmetry in a binary tree can be efficiently solved using level-order traversal and a queue.
+- It's important to ensure that nodes are compared in a manner that checks for mirror symmetry at each level of the tree.
+
+# Day 36: Distance K Nodes in a Binary Tree
+
+On the thirty-sixth day of the **100 Days of DSA Challenge**, I solved the problem of finding all nodes at distance `k` from a target node in a binary tree.
+
+## 📋 Problem Solved
+
+### Distance K Nodes in a Binary Tree
+- **Problem Statement**: Given a binary tree and a target node, find all nodes that are at distance `k` from the target node.
+
+### Approach:
+- **DFS Approach**:
+  1. **Find the target node**: Perform a DFS search to find the target node in the tree.
+  2. **Find nodes at distance k from the target**: Once the target node is found, use a helper function to collect all nodes that are `k` levels down from the target node.
+  3. **Handle both subtrees**: If the target node is found in the left subtree, look at the right subtree for nodes at the required distance, and vice versa.
+  
+- **Helper Function** (`dfs_down`): This function explores all nodes `k` levels below a given node and collects their values.
+- **Main Function** (`find_target`): This function recursively searches the tree for the target node. Once the target is found, it collects nodes that are `k` levels away using `dfs_down`.
+
+### Time Complexity:
+- **O(n)**, where `n` is the number of nodes in the tree, because we may need to traverse the entire tree.
+
+### Space Complexity:
+- **O(n)**, where `n` is the number of nodes at the deepest level or the height of the tree (due to recursion stack and storage for the result).
+
+## 💻 Code Implementation
+- **Solution**: [distance_k_nodes.cpp](./Day36/distance_k_nodes.cpp)
+
+## 📝 Learnings
+- The problem can be solved by combining depth-first search (DFS) to find the target node and another DFS to find the nodes at distance `k`.
+- Handling both left and right subtrees efficiently is key in this problem.
+
+# Day 37: Distance K Nodes in a Binary Tree
+
+On the thirty-seventh day of the **100 Days of DSA Challenge**, I solved the problem of finding all nodes at distance `k` from a target node in a binary tree.
+
+## 📋 Problem Solved
+
+### Distance K Nodes in a Binary Tree
+- **Problem Statement**: Given a binary tree and a target node, find all nodes that are at distance `k` from the target node.
+
+### Approach:
+- **DFS Approach**:
+  1. **Find the target node**: Perform a DFS search to find the target node in the tree.
+  2. **Find nodes at distance k from the target**: Once the target node is found, use a helper function to collect all nodes that are `k` levels down from the target node.
+  3. **Handle both subtrees**: If the target node is found in the left subtree, look at the right subtree for nodes at the required distance, and vice versa.
+  
+- **Helper Function** (`dfs`): This function explores all nodes `k` levels below a given node and collects their values.
+- **Main Function** (`findTarget`): This function recursively searches the tree for the target node. Once the target is found, it collects nodes that are `k` levels away using `dfs`.
+
+### Time Complexity:
+- **O(n)**, where `n` is the number of nodes in the tree, because we may need to traverse the entire tree.
+
+### Space Complexity:
+- **O(n)**, where `n` is the number of nodes at the deepest level or the height of the tree (due to recursion stack and storage for the result).
+
+## 💻 Code Implementation
+- **Solution**: [distance_k_nodes.cpp](./Day37/distance_k_nodes.cpp)
+
+## 📝 Learnings
+- The problem can be solved by combining depth-first search (DFS) to find the target node and another DFS to find the nodes at distance `k`.
+- Handling both left and right subtrees efficiently is key in this problem.
+
+# Day 38: Path Sum in a Binary Tree
+
+On the thirty-eighth day of the **100 Days of DSA Challenge**, I solved the problem of finding all paths in a binary tree that sum to a given target value.
+
+## 📋 Problem Solved
+
+### Path Sum in a Binary Tree
+- **Problem Statement**: Given a binary tree and a target sum, find all paths from the root to leaf nodes where the sum of the node values along the path equals the target sum.
+
+### Approach:
+- **DFS Approach**:
+  1. **DFS Traversal**: Use Depth First Search (DFS) to traverse the tree from root to leaf nodes.
+  2. **Path Tracking**: Maintain a list of nodes for each path from root to leaf.
+  3. **Backtracking**: As you explore each node, add its value to the current path and sum, and once a leaf node is reached, check if the sum matches the target. If so, store the path.
+  4. **Backtrack**: After exploring a node, remove it from the current path (backtrack) and adjust the current sum.
+
+- **Helper Function** (`findPathSum`): This function performs the DFS, passing along the current path and sum, and recursively explores both the left and right subtrees.
+
+### Time Complexity:
+- **O(n)**, where `n` is the number of nodes in the tree. We visit each node once.
+
+### Space Complexity:
+- **O(h)**, where `h` is the height of the tree, due to the recursion stack used in DFS and space for storing the path.
+
+## 💻 Code Implementation
+- **Solution**: [path_sum_binary_tree.cpp](./Day38/path_sum_binary_tree.cpp)
+
+## 📝 Learnings
+- The key to this problem is using DFS to traverse the tree and backtracking to find all valid paths that sum to the target.
+- Under
 
