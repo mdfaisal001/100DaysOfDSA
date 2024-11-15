@@ -1221,5 +1221,35 @@ On the thirty-eighth day of the **100 Days of DSA Challenge**, I solved the prob
 
 ## 📝 Learnings
 - The key to this problem is using DFS to traverse the tree and backtracking to find all valid paths that sum to the target.
-- Under
+  
+# Day 39: Count Good Nodes in Binary Tree
+
+On the thirty-ninth day of the **100 Days of DSA Challenge**, I solved the problem of counting "good" nodes in a binary tree.
+
+## 📋 Problem Solved
+
+### Count Good Nodes in Binary Tree
+- **Problem Statement**: A node in a binary tree is considered a "good" node if, on the path from the root to that node, there are no nodes with values greater than the node's value. Given the root of a binary tree, count the number of "good" nodes in the tree.
+
+### Approach:
+- **DFS Traversal**:
+  1. Use Depth First Search (DFS) to traverse the tree.
+  2. Keep track of the maximum value (`maxi`) encountered along the current path.
+  3. At each node, compare its value with `maxi`:
+     - If the node's value is greater than or equal to `maxi`, it's a "good" node, and increment the count.
+  4. Update `maxi` as the maximum of the current `maxi` and the node's value as you traverse deeper into the tree.
+- The helper function `findGoodNode` recursively computes the count of "good" nodes for the left and right subtrees.
+
+### Time Complexity:
+- **O(n)**, where `n` is the number of nodes in the tree. Each node is visited once.
+
+### Space Complexity:
+- **O(h)**, where `h` is the height of the tree, due to the recursion stack used in DFS.
+
+## 💻 Code Implementation
+- **Solution**: [count_good_nodes.cpp](./Day39/count_good_nodes.cpp)
+
+## 📝 Learnings
+- The problem highlights how to manage path-specific conditions during a tree traversal.
+- Efficiently updating and comparing values during recursion is key to solving such tree-based problems.
 
