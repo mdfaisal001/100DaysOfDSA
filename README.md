@@ -1247,7 +1247,7 @@ On the thirty-ninth day of the **100 Days of DSA Challenge**, I solved the probl
 - **O(h)**, where `h` is the height of the tree, due to the recursion stack used in DFS.
 
 ## 💻 Code Implementation
-- **Solution**: [count_good_nodes.cpp](./Day39/count_good_nodes.cpp)
+- **Solution**: [count_good_nodes.cpp](https://github.com/mdfaisal001/100DaysOfDSA/tree/main/100DaysOfDSA/Day39)
 
 ## 📝 Learnings
 - The problem highlights how to manage path-specific conditions during a tree traversal.
