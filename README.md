@@ -1253,3 +1253,111 @@ On the thirty-ninth day of the **100 Days of DSA Challenge**, I solved the probl
 - The problem highlights how to manage path-specific conditions during a tree traversal.
 - Efficiently updating and comparing values during recursion is key to solving such tree-based problems.
 
+# Day 40: Vertical Order Traversal of a Binary Tree
+
+On the fortieth day of the **100 Days of DSA Challenge**, I solved the problem of performing a vertical order traversal of a binary tree.
+
+## 📋 Problem Solved
+
+### Vertical Order Traversal of a Binary Tree
+- **Problem Statement**:  
+  Given the `root` of a binary tree, perform a vertical order traversal of the tree. Nodes at the same vertical level should be ordered by their row index first, and if two nodes are at the same row and column, they should be sorted by value.
+
+### Approach:
+- **DFS Traversal with Map Storage**:
+  1. Use Depth First Search (DFS) to traverse the tree.
+  2. Maintain a nested map structure `nodes`:
+     - Outer map key: **Column index**.
+     - Inner map key: **Row index**.
+     - Value: **Multiset of node values** to automatically handle sorting.
+  3. During DFS, update column and row indices for left and right child nodes:
+     - Left child: `(row + 1, col - 1)`
+     - Right child: `(row + 1, col + 1)`
+  4. After traversal, extract the values from the map in column-wise order, aggregating them into the result.
+
+### Time Complexity:
+- **O(n log n)**:  
+  Traversing all `n` nodes takes O(n), while inserting into the map involves sorting operations with a complexity of O(log n) for each insertion.
+
+### Space Complexity:
+- **O(n)**:  
+  Space is used to store the map and the recursion stack for DFS.
+
+## 💻 Code Implementation
+- **Solution**: [vertical_traversal.cpp](./Day40/vertical_traversal.cpp)
+
+## 📝 Learnings
+- Understanding how to efficiently organize data during tree traversal was crucial.
+- Multiset and nested map structures can simplify sorting and grouping operations in complex scenarios like vertical traversal.
+- Practicing tree problems strengthens the understanding of recursion and multi-level data structures.
+
+---
+# Day 41: Populating Next Right Pointers in Each Node
+
+On the forty-first day of the **100 Days of DSA Challenge**, I solved the problem of populating the next right pointers in each node of a binary tree.
+
+## 📋 Problem Solved
+
+### Populating Next Right Pointers in Each Node
+- **Problem Statement**:  
+  Given a binary tree, connect each node's `next` pointer to its next right node. If there is no next right node, the `next` pointer should be set to `NULL`. The traversal should be level-wise.
+
+### Approach:
+- **Level Order Traversal with a Queue**:
+  1. Perform a level-order traversal of the tree using a queue.
+  2. For each level:
+     - Connect the `next` pointer of each node to the node at the front of the queue (if it exists).
+     - Add the left and right child nodes of the current node to the queue for the next level.
+  3. After processing all nodes, the tree is updated with the correct `next` pointers.
+
+### Time Complexity:
+- **O(n)**:  
+  Each node is visited once.
+
+### Space Complexity:
+- **O(n)**:  
+  A queue is used to store nodes at each level.
+
+## 💻 Code Implementation
+- **Solution**: [connect_next_pointers.cpp](./Day41/connect_next_pointers.cpp)
+
+## 📝 Learnings
+- Understanding level-order traversal and how queues can be used to process nodes level by level.
+- Practiced connecting pointers in-place without using additional data structures for storing tree connections.
+- This problem reinforced the concepts of BFS and queue-based traversal for tree problems.
+
+---
+# Day 42: Binary Tree Right Side View
+
+On the forty-second day of the **100 Days of DSA Challenge**, I solved the problem of finding the right side view of a binary tree.
+
+## 📋 Problem Solved
+
+### Binary Tree Right Side View
+- **Problem Statement**:  
+  Given the root of a binary tree, return the values of the nodes that are visible when the tree is viewed from the right side. The right side view of the tree is the set of nodes that are visible when we look at the tree from the right.
+
+### Approach:
+- **Level Order Traversal (BFS)**:
+  1. Perform a level-order traversal using a queue.
+  2. For each level:
+     - The rightmost node at that level will be visible from the right side, so we add it to the result.
+  3. As we process nodes level by level, we ensure that the last node at each level is included in the result list.
+
+### Time Complexity:
+- **O(n)**:  
+  Each node is visited once.
+
+### Space Complexity:
+- **O(n)**:  
+  A queue is used to store nodes at each level, where `n` is the number of nodes in the tree.
+
+## 💻 Code Implementation
+- **Solution**: [right_side_view.cpp](./Day42/right_side_view.cpp)
+
+## 📝 Learnings
+- The problem reinforced the concept of level-order traversal (BFS) for tree problems.
+- Understanding how to identify the rightmost node at each level of the tree and storing it for the final result.
+- This solution emphasized the importance of using a queue for level-wise traversal in binary trees.
+
+---
